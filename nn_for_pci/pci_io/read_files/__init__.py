@@ -1,0 +1,3 @@
+from .read_headers import read_conf_inp_header_lines, read_conf_res_header_lines
+from .read_confs import read_conf_inp_confs_lines
+from .read_weights import read_conf_res_weights_lines

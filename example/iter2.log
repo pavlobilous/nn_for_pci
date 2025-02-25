@@ -1,0 +1,74 @@
+
+************************
+Creating a NeuralManager
+==> Loading full basis...
+	Full basis size: 151422
+	Features: 231
+Done.
+
+Loading computation
+	path='_saved_comp1'
+Done.
+
+Sorting out the basis using a neural network
+cutlog: -9.0
+==> Reading and preparing weights...
+Done.
+==> Training the neural network...
+	Training set size: 27922
+	...of which important: 13624
++++++ STARTING EVALUATION +++++
+1/1 - 0s - 339ms/step - accuracy: 0.7466 - loss: 1.1647
++++++ TRAINING +++++
+Epoch 1/200
+699/699 - 2s - 3ms/step - accuracy: 0.8230 - loss: 0.3907 - val_accuracy: 0.8534 - val_loss: 0.3387
+Epoch 2/200
+699/699 - 1s - 2ms/step - accuracy: 0.8880 - loss: 0.2594 - val_accuracy: 0.8693 - val_loss: 0.3224
+Epoch 3/200
+699/699 - 1s - 2ms/step - accuracy: 0.9193 - loss: 0.1941 - val_accuracy: 0.8799 - val_loss: 0.3094
+Epoch 4/200
+699/699 - 1s - 2ms/step - accuracy: 0.9373 - loss: 0.1517 - val_accuracy: 0.8854 - val_loss: 0.2811
+Epoch 5/200
+699/699 - 1s - 2ms/step - accuracy: 0.9537 - loss: 0.1126 - val_accuracy: 0.8877 - val_loss: 0.3278
+Epoch 6/200
+699/699 - 1s - 2ms/step - accuracy: 0.9647 - loss: 0.0905 - val_accuracy: 0.8904 - val_loss: 0.3458
+Epoch 7/200
+699/699 - 1s - 2ms/step - accuracy: 0.9734 - loss: 0.0722 - val_accuracy: 0.8879 - val_loss: 0.3864
+Epoch 8/200
+699/699 - 1s - 2ms/step - accuracy: 0.9748 - loss: 0.0683 - val_accuracy: 0.8958 - val_loss: 0.3946
+Epoch 9/200
+699/699 - 1s - 2ms/step - accuracy: 0.9825 - loss: 0.0474 - val_accuracy: 0.8917 - val_loss: 0.4319
+Epoch 10/200
+699/699 - 1s - 2ms/step - accuracy: 0.9790 - loss: 0.0562 - val_accuracy: 0.8988 - val_loss: 0.4116
+Epoch 11/200
+699/699 - 1s - 2ms/step - accuracy: 0.9861 - loss: 0.0371 - val_accuracy: 0.8987 - val_loss: 0.4230
+Epoch 12/200
+699/699 - 1s - 2ms/step - accuracy: 0.9867 - loss: 0.0374 - val_accuracy: 0.8888 - val_loss: 0.4646
+Epoch 13/200
+699/699 - 1s - 2ms/step - accuracy: 0.9892 - loss: 0.0317 - val_accuracy: 0.8990 - val_loss: 0.4260
+Epoch 14/200
+699/699 - 1s - 2ms/step - accuracy: 0.9888 - loss: 0.0321 - val_accuracy: 0.8933 - val_loss: 0.4858
+Epoch 15/200
+699/699 - 1s - 2ms/step - accuracy: 0.9897 - loss: 0.0294 - val_accuracy: 0.8979 - val_loss: 0.4901
+Epoch 16/200
+699/699 - 1s - 2ms/step - accuracy: 0.9908 - loss: 0.0259 - val_accuracy: 0.8913 - val_loss: 0.5149
+Epoch 17/200
+699/699 - 1s - 2ms/step - accuracy: 0.9910 - loss: 0.0271 - val_accuracy: 0.8927 - val_loss: 0.5121
+Epoch 18/200
+699/699 - 1s - 2ms/step - accuracy: 0.9909 - loss: 0.0253 - val_accuracy: 0.8987 - val_loss: 0.4527
+Done.
+==> Applying the neural network...
+	Application to: 114138
+	Classified as important: 8582
+Done.
+==> Balancing the next training set...
+	Balancing fraction: 0.5
+	Balance set size: 4291
+Done.
+==> Writing input for the atomic code...
+	Number of written: 35859
+Done.
+
+Saving computation
+	path='_saved_comp2'
+Done.

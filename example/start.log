@@ -1,0 +1,23 @@
+
+************************
+Creating a NeuralManager
+==> Loading full basis...
+	Full basis size: 151422
+	Features: 115
+Done.
+
+Starting a new neural-network-supported computation
+==> Loading prior basis...
+	Prior basis size: 28348
+Done.
+==> Adding randoms on top...
+	Fraction of randoms: 0.05
+	Number of randoms: 6153
+Done.
+==> Writing input for the atomic code...
+	Number of written: 34501
+Done.
+
+Saving computation
+	path='_saved_comp'
+Done.

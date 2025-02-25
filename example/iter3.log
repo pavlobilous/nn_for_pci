@@ -1,0 +1,64 @@
+
+************************
+Creating a NeuralManager
+==> Loading full basis...
+	Full basis size: 151422
+	Features: 231
+Done.
+
+Loading computation
+	path='_saved_comp2'
+Done.
+
+Sorting out the basis using a neural network
+cutlog: -9.5
+==> Reading and preparing weights...
+Done.
+==> Training the neural network...
+	Training set size: 12873
+	...of which important: 7314
++++++ STARTING EVALUATION +++++
+1/1 - 0s - 334ms/step - accuracy: 0.8314 - loss: 0.7846
++++++ TRAINING +++++
+Epoch 1/200
+322/322 - 1s - 4ms/step - accuracy: 0.8444 - loss: 0.3793 - val_accuracy: 0.8548 - val_loss: 0.3335
+Epoch 2/200
+322/322 - 1s - 2ms/step - accuracy: 0.9093 - loss: 0.2220 - val_accuracy: 0.8691 - val_loss: 0.3445
+Epoch 3/200
+322/322 - 1s - 2ms/step - accuracy: 0.9427 - loss: 0.1441 - val_accuracy: 0.8773 - val_loss: 0.3494
+Epoch 4/200
+322/322 - 1s - 2ms/step - accuracy: 0.9616 - loss: 0.0973 - val_accuracy: 0.8742 - val_loss: 0.4140
+Epoch 5/200
+322/322 - 1s - 2ms/step - accuracy: 0.9770 - loss: 0.0605 - val_accuracy: 0.8485 - val_loss: 0.5351
+Epoch 6/200
+322/322 - 1s - 2ms/step - accuracy: 0.9819 - loss: 0.0539 - val_accuracy: 0.8750 - val_loss: 0.5408
+Epoch 7/200
+322/322 - 1s - 2ms/step - accuracy: 0.9865 - loss: 0.0421 - val_accuracy: 0.8788 - val_loss: 0.5289
+Epoch 8/200
+322/322 - 1s - 2ms/step - accuracy: 0.9920 - loss: 0.0243 - val_accuracy: 0.8858 - val_loss: 0.6147
+Epoch 9/200
+322/322 - 1s - 2ms/step - accuracy: 0.9908 - loss: 0.0310 - val_accuracy: 0.8781 - val_loss: 0.5983
+Epoch 10/200
+322/322 - 1s - 2ms/step - accuracy: 0.9912 - loss: 0.0290 - val_accuracy: 0.8707 - val_loss: 0.6783
+Epoch 11/200
+322/322 - 1s - 2ms/step - accuracy: 0.9934 - loss: 0.0243 - val_accuracy: 0.8854 - val_loss: 0.6171
+Epoch 12/200
+322/322 - 1s - 2ms/step - accuracy: 0.9930 - loss: 0.0218 - val_accuracy: 0.8812 - val_loss: 0.6137
+Epoch 13/200
+322/322 - 1s - 2ms/step - accuracy: 0.9925 - loss: 0.0224 - val_accuracy: 0.8800 - val_loss: 0.6268
+Done.
+==> Applying the neural network...
+	Application to: 115563
+	Classified as important: 12878
+Done.
+==> Balancing the next training set...
+	Balancing fraction: 0.5
+	Balance set size: 6439
+Done.
+==> Writing input for the atomic code...
+	Number of written: 49617
+Done.
+
+Saving computation
+	path='_saved_comp3'
+Done.

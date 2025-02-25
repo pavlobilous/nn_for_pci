@@ -1,0 +1,56 @@
+
+************************
+Creating a NeuralManager
+==> Loading full basis...
+	Full basis size: 151422
+	Features: 231
+Done.
+
+Loading computation
+	path='_saved_comp4'
+Done.
+
+Sorting out the basis using a neural network
+cutlog: -10.5
+==> Reading and preparing weights...
+Done.
+==> Training the neural network...
+	Training set size: 20406
+	...of which important: 10576
++++++ STARTING EVALUATION +++++
+1/1 - 0s - 335ms/step - accuracy: 0.7831 - loss: 1.0351
++++++ TRAINING +++++
+Epoch 1/200
+511/511 - 2s - 3ms/step - accuracy: 0.8181 - loss: 0.4156 - val_accuracy: 0.8332 - val_loss: 0.3710
+Epoch 2/200
+511/511 - 1s - 2ms/step - accuracy: 0.8818 - loss: 0.2758 - val_accuracy: 0.8488 - val_loss: 0.3531
+Epoch 3/200
+511/511 - 1s - 2ms/step - accuracy: 0.9175 - loss: 0.1937 - val_accuracy: 0.8488 - val_loss: 0.3870
+Epoch 4/200
+511/511 - 1s - 2ms/step - accuracy: 0.9454 - loss: 0.1353 - val_accuracy: 0.8574 - val_loss: 0.4204
+Epoch 5/200
+511/511 - 1s - 2ms/step - accuracy: 0.9654 - loss: 0.0921 - val_accuracy: 0.8474 - val_loss: 0.5121
+Epoch 6/200
+511/511 - 1s - 2ms/step - accuracy: 0.9718 - loss: 0.0736 - val_accuracy: 0.8542 - val_loss: 0.5370
+Epoch 7/200
+511/511 - 1s - 2ms/step - accuracy: 0.9792 - loss: 0.0558 - val_accuracy: 0.8457 - val_loss: 0.5779
+Epoch 8/200
+511/511 - 1s - 2ms/step - accuracy: 0.9827 - loss: 0.0486 - val_accuracy: 0.8439 - val_loss: 0.6000
+Epoch 9/200
+511/511 - 1s - 2ms/step - accuracy: 0.9900 - loss: 0.0334 - val_accuracy: 0.8464 - val_loss: 0.6725
+Done.
+==> Applying the neural network...
+	Application to: 90793
+	Classified as important: 9271
+Done.
+==> Balancing the next training set...
+	Balancing fraction: 0
+	Balance set size: 0
+Done.
+==> Writing input for the atomic code...
+	Number of written: 60070
+Done.
+
+Saving computation
+	path='_saved_comp5'
+Done.
