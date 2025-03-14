@@ -20,7 +20,7 @@ The `NeuralManager` class contains the following methods and properties for perf
 
 `NeuralManager.start_new_comp(rand_frac, cutlog)` -- is used for starting a NN-supported CI computation by forming an input for the first pCI run (the results of the latter can be then used to train the NN)
 - `rand_frac` is the fraction of relativistic configurations to be randomly included on top of the "prior" set;
-- `cutlog` (key-only optional argument) is log_10 of the cutoff for relativistic configurations from the "prior" set to be included.
+- `cutlog` (key-only optional argument) is log_10 of the cutoff for relativistic configurations from the "prior" set to be included. If not specified, the whole "prior" set is included.
 
 `NeuralManager.neural_sortout(cutlog, bal_ratio, nn_model, start_eval_kwargs, train_kwargs, apply_kwargs)` -- the method used for iterative NN-based sortout of the basis (this is the central function of the package)
 - `cutlog` is log_10 of the "importance" cutoff for relativistic configurations. The NN will target inclusion of configuration with weights larger than this cutoff;
