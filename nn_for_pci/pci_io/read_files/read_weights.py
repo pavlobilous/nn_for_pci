@@ -27,10 +27,9 @@ def read_conf_res_weights_lines(f: TextIO, Nc, Nlv, dest_arr=None) -> Generator:
         assert dest_arr.shape[0] == Nc, 'dest_arr must have Nc rows.'
         assert dest_arr.shape[1] == Nlv, 'dest_arr must have Nlv columns.'
 
-    yield from read_lines_till_weights(f)
-
     CHUNK_SIZE = 5
     for lv_start in range(0, Nlv, CHUNK_SIZE):
+        yield from read_lines_till_weights(f)
         lv_end = min(lv_start + CHUNK_SIZE, Nlv)
         dest_part_arr = dest_arr[:, lv_start:lv_end] \
                         if dest_arr is not None \
