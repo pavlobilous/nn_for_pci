@@ -40,7 +40,7 @@ The `NeuralManager` class contains the following methods and properties for perf
 
 `NeuralManager.features_num` -- returns the number of features, that is parameters used as NN input for each relativistic configurations.
 
-It is possible to use the NN support with a different CI solver by replacing `PciIO` with a custom class implementing the corresponding coupling. This custom class must inherit from the abstract class `AtomicCodeIO` with implementation of its five abstract methods for writing the input for the atomic code and reading its output: `read_full_basis`, `read_start_basis`, `read_start_weights`, `read_current_weights`, `write_current_basis`.
+It is possible to use the NN support with a different CI solver by replacing `PciIO` with a custom class implementing the corresponding coupling. This custom class must inherit from the abstract class `AtomicCodeIO` with implementation of its five abstract methods for writing the input for the atomic code and reading its output: `read_full_basis`, `read_prior_basis`, `read_prior_weights`, `read_current_weights`, `write_current_basis`.
 
 Please follow the detailed instructions in Ref. [3] for performing NN-supported CI computations with the algorithm from Ref. [1].
 
