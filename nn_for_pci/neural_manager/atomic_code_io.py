@@ -6,6 +6,7 @@ Numpy2DArray = Sequence
 
 
 class AtomicCodeIO(ABC):
+    """An interface for creating custom couplings to atomic codes."""
 
     @abstractmethod
     def read_full_basis(self) -> Numpy2DArray:
@@ -13,12 +14,12 @@ class AtomicCodeIO(ABC):
 
 
     @abstractmethod
-    def read_start_basis(self) -> Numpy2DArray:
+    def read_prior_basis(self) -> Numpy2DArray:
         pass
 
 
     @abstractmethod
-    def read_start_weights(self) -> Numpy1DArray[float]:
+    def read_prior_weights(self) -> Numpy1DArray[float]:
         pass
 
 

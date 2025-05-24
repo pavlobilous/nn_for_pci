@@ -11,8 +11,8 @@ from tensorflow.keras.callbacks import EarlyStopping
 
 pci_io_files = PciIOFiles(
     conf_inp_full="full/CONF.INP",
-    conf_inp_start="prior/CONF.INP",
-    conf_res_start="prior/CONF.RES",
+    conf_inp_prior="prior/CONF.INP",
+    conf_res_prior="prior/CONF.RES",
     conf_inp_current="CONF.INP",
     conf_res_current="CONF.RES"
 )

@@ -13,6 +13,8 @@ The user creates an instance of the `PciIO` class to establish the communication
 
 Here, the “prior” computation is a smaller-scale CI computation performed directly (without NN). The created named tuple is used directly in the `PciIO` constructor. The obtained `PciIO` object, in turn, is used to create an instance of the `NeuralManager` class.
 
+The `PciIO` constructor has additional boolean arguments `digitize` and `normalize` (both by default False, cannot be True at the same time), which trigger a corresponding transformation of the dataset with relativistic configurations immediately after the loading, see Ref. [3] for details.
+
 The `NeuralManager` class contains the following methods and properties for performing the iterative algorithm from Ref. [1].
 
 `NeuralManager(code_io)` -- the constructor of the class.\
