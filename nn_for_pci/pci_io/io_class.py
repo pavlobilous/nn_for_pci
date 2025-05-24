@@ -19,9 +19,9 @@ def _digitize_arr(arr):
 
 
 def _normalize_arr(arr):
-    norm = arr.max(axis=1)
+    norm = arr.max(axis=0)
     norm[np.where(norm == 0)[0]] = 1
-    res = np.divide(arr, norm[:, np.newaxis], dtype=np.float32)
+    res = np.divide(arr, norm, dtype=np.float32)
     return res
 
 
